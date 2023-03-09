@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { HiMenuAlt1 } from 'react-icons/hi'
-import { BsCart3 } from 'react-icons/bs'
-import { IoNotificationsOutline } from 'react-icons/io5'
+import { ImCart } from 'react-icons/im'
+import { MdNotifications } from 'react-icons/md'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { searchProducts, showSideBar } from '../actions'
@@ -42,12 +42,12 @@ const Header = ({ data, show }) => {
             </div>)}
             {show ? null : (<Link to="/cart"><div className="icon">
                 <span>{cartItems ? cartItems?.length : 0}</span>
-                <BsCart3 />
+                <ImCart />
             </div></Link>)}
             <div className="icon" onClick={() => setShow(!showNoti)} >
 
                 {data?.length === undefined ? null : <span>{data?.filter(item => item.inStockItem <= 3).length} </span>}
-                <IoNotificationsOutline />
+                <MdNotifications />
 
             </div>
             {showNoti && (<div className='waring-noti'>
@@ -64,7 +64,7 @@ const Header = ({ data, show }) => {
 
             <form onSubmit={handleSearch} className="search-bar">
                 <div className="input">
-                    <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Search For Food' />
+                    <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Search here' />
                     {search?.loading ? (<div>
                         <Spinner />
                     </div>) : <FiSearch onClick={handleSearch} />}

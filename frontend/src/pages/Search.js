@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
-import SideBar from '../components/SideBar';
-import Header from '../components/Header';
+// import SideBar from '../components/SideBar';
+// import Header from '../components/Header';
 import LeftSide from '../components/LeftSide';
 import ProductCard from '../components/products/ProductCard';
 import Message from '../components/Message';
@@ -22,7 +22,7 @@ const Search = () => {
  console.log(data);
   return (
       <>
-      <SideBar/>
+      {/* <SideBar/> */}
        <div className='mainarea  main-search'>
          {/* <Header/> */}
          <h3>search result: {data?.length} for {query}</h3>

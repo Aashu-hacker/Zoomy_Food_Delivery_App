@@ -17,7 +17,7 @@ const AdminOrders = () => {
   },[])
   return (
     <>
-    <SideBar/>   
+    {/* <SideBar/>    */}
     <div className='mainarea admin '>
     {/* <Header/> */}
     <div className="all-orders-area">

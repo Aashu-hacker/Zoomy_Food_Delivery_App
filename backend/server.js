@@ -5,8 +5,8 @@ import userRouter from './routes/userRouter.js';
 import productRouter from './routes/productRouter.js';
 import dotenv from 'dotenv'
 import orderRouter from './routes/OrderRouter.js';
-import path,{dirname} from 'path'
-import { fileURLToPath } from 'url';
+// import path,{dirname} from 'path'
+// import { fileURLToPath } from 'url';
 import contactformRouter from './routes/contactformRouter.js';
 dotenv.config()
 
@@ -15,7 +15,8 @@ const app = express();
 app.use(express.json({ limit: '30mb', extended: true }))  // to parse body in json format (body parser)
 app.use(express.urlencoded({limit: '30mb',extended:true}))
 const PORT= process.env.PORT || 5000
-const uri  = "mongodb+srv://admin:Aashu2104@cluster0.gmzba1y.mongodb.net/test";
+const uri  = "mongodb+srv://admin:aashu@cluster0.gmzba1y.mongodb.net/Zoomy?retryWrites=true&w=majority";
+
 
 mongoose.connect(uri,
     err => {

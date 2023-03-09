@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import '../styles/cart.css'
-import SideBar from '../components/SideBar'
-import emtycart from '../assests/emtycart.gif'
+import Header from '../components/Header'
+// import emtycart from '../assests/emtycart'
 import CartItemCard from '../components/CartItemCard'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
@@ -24,8 +24,9 @@ const Cart = () => {
     }
     return (
         <>
-        <SideBar/>
+       
         <div className='cart-screen'>
+        <Header/>
             <h1>MY CART</h1>
             {
                 cartItems?.length>0?(
@@ -60,7 +61,7 @@ const Cart = () => {
                   </div>
                 ):(
                     <>
-                    <img src={'https://bakestudio.in/assets/images/cart/empty-cart.gif'} alt="" />
+                    <img className="image" src={'https://bakestudio.in/assets/images/cart/empty-cart.gif'} alt="" />
                     <h2>Hey, it feels so light!</h2>
                     <p> your Cart Is Empty. Let's add some items.</p>
                     <Link to="/"><button>Home</button></Link>

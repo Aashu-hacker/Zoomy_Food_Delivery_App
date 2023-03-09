@@ -23,7 +23,7 @@ const OrderDetails = () => {
   return (
       <>
     <div className='shipping'>
-   <SideBar/>
+   {/* <SideBar/> */}
 {!loading?(<div className="shipping-details">
 <div className="shippingshippingAddress">
 <h3>ORDER DETAILS</h3>

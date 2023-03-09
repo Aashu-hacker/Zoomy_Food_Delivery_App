@@ -22,7 +22,7 @@ const Wishlist = () => {
     },[])
   return (
       <>
-      <SideBar/>
+      {/* <SideBar/> */}
        <div className='mainarea  main-search'>
          {/* <Header/> */}
         

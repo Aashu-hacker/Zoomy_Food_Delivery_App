@@ -48,7 +48,7 @@ const Admin = () => {
     
   return (
     <> 
-     <SideBar/>   
+     {/* <SideBar/>    */}
     <div className='mainarea admin '>
     {/* <Header/> */}
     <div className="admin-items">

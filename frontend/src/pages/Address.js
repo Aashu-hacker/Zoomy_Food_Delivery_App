@@ -27,7 +27,7 @@ const Address = () => {
     },[])
   return (
     <>
-    <SideBar/>
+    {/* <SideBar/> */}
     <div className='mainarea'>
     {/* <Header/> */}
     <div className="address">

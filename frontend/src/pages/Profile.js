@@ -1,5 +1,5 @@
 import React, {  useState } from 'react';
-import SideBar from '../components/SideBar';
+// import SideBar from '../components/SideBar';
 // import Header from '../components/Header';
 import LeftSide from '../components/LeftSide';
 import '../styles/profile.css';
@@ -31,7 +31,7 @@ if(text==='mob'){
 
   return(
       <>
-       <SideBar/>
+       {/* <SideBar/> */}
        <div className='mainarea all-oredrs'>
          {/* <Header/> */}
          <div className="profile-section">

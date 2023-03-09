@@ -52,7 +52,7 @@ const MainArea = () => {
                 <div className="category">
                     <div className={`cat-icon ${category === 'all' && 'active'} `} onClick={() => setCategory('all')}>
                         <div className="img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Z7jQGhw-yMlPenXgCkPGwl2vC2PiteVYIw&usqp=CAU" alt="all" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046874.png" alt="all" />
                         </div>
                         <div className="lebal">
                             All
@@ -61,7 +61,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Burger' && 'active'} `} onClick={() => setCategory('Burger')}>
                         <div className="img">
 
-                            <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933054.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Burgers
@@ -71,7 +71,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Sandwich' && 'active'} `} onClick={() => setCategory('Sandwich')}>
                         <div className="img">
 
-                            <img src="https://cdn-icons-png.flaticon.com/128/6518/6518098.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/669/669856.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Sandwich
@@ -81,7 +81,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Smoothy' && 'active'} `} onClick={() => setCategory('Smoothy')}>
                         <div className="img">
 
-                            <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-ice-cream-carnival-vitaliy-gorbachev-flat-vitaly-gorbachev.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/4080/4080651.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Smoothy
@@ -91,7 +91,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Snaks' && 'active'} `} onClick={() => setCategory('Snaks')}>
                         <div className="img">
 
-                            <img src="https://img.icons8.com/color/2x/popcorn.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/7438/7438624.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Snaks
@@ -101,27 +101,27 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Drink' && 'active'} `} onClick={() => setCategory('Drink')}>
                         <div className="img">
 
-                            <img src="https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-drinking-cafe-itim2101-flat-itim2101.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/2738/2738890.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Drinks
                         </div>
 
                     </div>
-                    <div className={`cat-icon  ${category === 'Biryani' && 'active'} `} onClick={() => setCategory('Sabzi')}>
+                    <div className={`cat-icon  ${category === 'Biryani' && 'active'} `} onClick={() => setCategory('Biryani')}>
                         <div className="img">
 
-                            <img src="https://cdn-icons-png.flaticon.com/128/6518/6518098.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/4034/4034070.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Biryani
                         </div>
 
                     </div>
-                    <div className={`cat-icon  ${category === 'Cakes' && 'active'} `} onClick={() => setCategory('Chapati')}>
+                    <div className={`cat-icon  ${category === 'Cakes' && 'active'} `} onClick={() => setCategory('Cakes')}>
                         <div className="img">
 
-                            <img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/918/918234.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Cakes
@@ -131,7 +131,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Chicken' && 'active'} `} onClick={() => setCategory('Chicken')}>
                         <div className="img">
 
-                            <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/1895/1895685.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Chicken
@@ -141,7 +141,7 @@ const MainArea = () => {
                     <div className={`cat-icon  ${category === 'Rolls' && 'active'} `} onClick={() => setCategory('Rolls')}>
                         <div className="img">
 
-                            <img src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="pizza" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/2398/2398908.png" alt="pizza" />
                         </div>
                         <div className="lebal">
                             Rolls
@@ -161,7 +161,8 @@ const MainArea = () => {
 
                 }
                 {category === category &&
-                    <Product category={category} />}
+                    <Product category={category} />
+                    }
                 
             </div>
         <br></br>
