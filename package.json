@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "online food ordering application",
   "main": "server.js",
+  "homepage": "https://Aashu-hacker.github.io/zoomy_food_ordering_app",
   "scripts": {
     "build": "cd frontend && npm run build",
     "predeploy" : "npm run build",
