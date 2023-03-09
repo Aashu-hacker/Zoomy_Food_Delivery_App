@@ -32,21 +32,21 @@ app.use('/api/contact',contactformRouter)
 
 //Serve static assests if in production
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
-// app.use(express.static(path.join(__dirname, '../frontend/build')))
-// if(process.env.NODE_ENV==='production'){
-//     //set a static folder
-//     app.get('*', (req, res) =>{
-//       res.sendFile(
-//         path.resolve(__dirname, '../frontend', 'build', 'index.html')
-//       )
-//      } );
-// } else {
-//   app.get('/', (req, res) => {
-//     res.send('API is running....');
-//   });
-// }
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+app.use(express.static(path.join(__dirname, '../frontend/build')))
+if(process.env.NODE_ENV==='production'){
+    //set a static folder
+    app.get('*', (req, res) =>{
+      res.sendFile(
+        path.resolve(__dirname, '../frontend', 'build', 'index.html')
+      )
+     } );
+} else {
+  app.get('/', (req, res) => {
+    res.send('API is running....');
+  });
+}
 
 
 
