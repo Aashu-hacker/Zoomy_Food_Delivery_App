@@ -1,7 +1,7 @@
 # Zoomy_food_delivery_app
 
 
-> Food Delivery app made using MERN stack (UNDER DEVLOPEMENT) <br>
+> Food Delivery app made using MERN stack <br>
 > APP uses morden React and NodeJS features like Modules ,Skeletons , React Portals ,Redux thunk<br>
 > Followed MVC architecture and microservices for serever side
 
@@ -25,9 +25,18 @@
 ## 📸 Screenshots
 
 ## Home Page
+<img src="./frontend/src/assests/home.png" width='800' height='auto'>
+<br>
 
 
-## Pizza Builder Page
+## Menu Page
+<img src="./frontend/src/assests/menu.png" width='800' height='auto'>
+<br>
+
+## About Page
+<img src="./frontend/src/assests/about.png" width='800' height='auto'>
+<br>
+
 
 
 

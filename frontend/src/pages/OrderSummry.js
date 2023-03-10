@@ -3,9 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation ,useNavigate} from 'react-router-dom';
 import { getAdress, selectAddress } from '../actions/address';
 import { placeOrder } from '../actions/orders';
-import pizza from '../apis/pizza';
+// import pizza from '../apis/pizza';
 import logo from '../assests/pizzaSilce.png'
 import Message from '../components/Message';
+import Header from '../components/Header';
 import Spinner from '../components/Spinner';
 const OrderSummry = () => {
 
@@ -87,7 +88,7 @@ const options = {
    "currency":'INR',
   //  "amount":data?.price*100,
    "amount":totalPrice*100,
-  "name": "Pizza Delivery",
+  "name": " Zoomy_food",
   "image":logo,
   "description":address.name,
    //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
@@ -142,6 +143,7 @@ if(!res){
   return (
     <>
   <div className='shipping'>
+    <Header/>
        <div className="progress">
         <div className="status">
             <p>Bag</p>

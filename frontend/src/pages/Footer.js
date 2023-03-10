@@ -95,7 +95,7 @@ const Footer = () => {
   <div class="content-foot">
     <div class="container">
       <div class="foot-text">
-        <p>powered by <span>Vowelweb</span> - designed by <span>Ashish</span></p>
+        <p>powered by <span>@</span> - designed by <span>Demo Team</span></p>
         <div class="pay">
           <img src="https://i.postimg.cc/PrtWyFPY/visa-logo-png-2013.png" alt="" />
           <img src="https://i.postimg.cc/R0j1TSHZ/mastercard-PNG23.png" alt="" />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LeftSide from '../components/LeftSide';
-import SideBar from '../components/SideBar';
-import Header from '../components/Header'
+// import SideBar from '../components/SideBar';
+// import Header from '../components/Header'
 import pizza from '../apis/pizza';
 import { Link } from 'react-router-dom';
 import '../styles/allorders.css'
@@ -26,7 +26,7 @@ const AllOrders = () => {
 
   return(
       <>
-      <SideBar/>
+      {/* <SideBar/> */}
        <div className='mainarea all-oredrs'>
          {/* <Header/> */}
          <div className="all-orders-area">
