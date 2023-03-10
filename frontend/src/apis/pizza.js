@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'https://riocafe.onrender.com',
+  baseURL: 'https://zoomy-1ot3.onrender.com',
 });
 
 //"start": "node ./backend/server.js",
